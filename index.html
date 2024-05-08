@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid</title>
+
+
+    <!-- Bootstrap css CDN link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- slick slider link  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- font awesome CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS cdn  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Josefin sans, Barlow and Nunito google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- custom stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Topbar/Ad-bar  -->
+    <div class="topbar d-flex align-items-center justify-content-center w-100">
+        <p class="text-center text-uppercase my-2">free shipping on all U.S. orders $49+</p>
+    </div>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-body-white sticky-top flex-column p-0">
+        <div class="container pb-1">
+            <!-- Navbar toggler in Mobile/Tablet devices  -->
+            <button class="navbar-toggler ps-0 pt-3 pt-lg-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="/assets/PNGs/logo-fluid.png" alt="Fluid">
+            </a>
+            <!-- Search Profile Cart icon for mobile/tablet device -->
+            <div class="navbar-icon-wrap d-inline-block d-lg-none">
+                <a href="#" class="profile-btn"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-quantity"
+                        data-attribute="2"></span></a>
+            </div>
+            <!-- Nav Menus -->
+            <div class="collapse navbar-collapse pt-0 pt-lg-2" id="navbarText">
+                <ul class="navbar-nav me-auto mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">our story</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">brew guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link search-btn"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
+                <!-- Search Profile Cart icon for Desktop device -->
+                <div class="navbar-icon-wrap d-none d-lg-inline-block">
+                    <a href="#" class="profile-btn"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i><span class="cart-quantity"
+                            data-attribute="2"></span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section  -->
+    <section class="hero-section py-4">
+        <div class="container">
+            <div class="row hero-row-wrap">
+                <div class="col-xl-6">
+                    <div data-aos="zoom-out" class="hero-content-bg">
+                        <h1 class="hero-title text-uppercase">Think <br> like an engineer</h1>
+                        <p class="hero-subtitle mt-3 mb-4">Build a toy each month a longside Mark Rober!</p>
+                        <div class="btn-wrap d-flex justify-content-start gap-3 gap-md-4">
+                            <a href="#" class="custom-btn btn-primary text-uppercase">Get Started</a>
+                            <a href="#" class="custom-btn btn-secondary text-uppercase">Gift It</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-0 pt-lg-4">
+                <div class="col-12 text-center">
+                    <a href="#product-slider" class="text-uppercase explore-btn">Explore <i
+                            class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product slider section  -->
+    <section class="section-padding product-slider-section" id="product-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="section-subtitle text-uppercase mb-0">POUR YOUR BEST CUP WITH</p>
+                    <h2 class="section-title text-uppercase mb-0">OUR BEST SELLERS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="designs">
+            <div class="slider-wrap">
+                <div class="productSlider">
+
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap">
+                                    <img src="/assets/PNGs/Image 2.png" alt="Product" id="varient1"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                    <img src="/assets/PNGs/Image 3.png" alt="Product" id="varient2"
+                                        class="tab-pane fade img-fluid product-img">
+                                    <img src="/assets/PNGs/Image 2.png" alt="Product" id="varient3"
+                                        class="tab-pane fade img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 3;"
+                                        aria-label="Rating of this product is 3 out of 5">
+                                    </div>
+                                    <h5 class="product-name">Coffee French Press P7</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$123.00 - $149.00 <span class="mrp"></span></p>
+                                    </div>
+                                    <ul class="varient-wrap nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#varient1"
+                                                class="varient-btn grey"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#varient2" class="varient-btn black"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#varient3" class="varient-btn grey"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap sale-tag">
+                                    <img src="/assets/PNGs/Image 3.png" alt="Product"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 5;"
+                                        aria-label="Rating of this product is 5 out of 5">
+                                    </div>
+                                    <h5 class="product-name">Coffee French Press P6</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$123.00 <span class="mrp">$149.00</span></p>
+                                    </div>
+                                    <ul class="varient-wrap nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#" class="varient-btn grey"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn black"></a></li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn grey"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap new-tag">
+                                    <img src="/assets/PNGs/Image 4.png" alt="Product"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 5;"
+                                        aria-label="Rating of this product is 5 out of 5">
+                                    </div>
+                                    <h5 class="product-name">BLOOM Pour Over Coffee Brewing Kit, 18 oz</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$99.95 <span class="mrp"></span></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap back-in-stock-tag">
+                                    <img src="/assets/PNGs/Image 5.png" alt="Product"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 5;"
+                                        aria-label="Rating of this product is 5 out of 5">
+                                    </div>
+                                    <h5 class="product-name">Coffee French Press P7</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$123.00 <span class="mrp">$149.00</span></p>
+                                    </div>
+                                    <ul class="varient-wrap nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#" class="varient-btn grey"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn black"></a></li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn grey"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap">
+                                    <img src="/assets/PNGs/Image 2.png" alt="Product"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 5;"
+                                        aria-label="Rating of this product is 5 out of 5">
+                                    </div>
+                                    <h5 class="product-name">Coffee French Press P7</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$123.00 <span class="mrp">$149.00</span></p>
+                                    </div>
+                                    <ul class="varient-wrap nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#" class="varient-btn grey"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn black"></a></li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn grey"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product listing  -->
+                    <div>
+                        <div class="product-wrap">
+                            <a href="#">
+                                <div class="tab-content product-img-wrap">
+                                    <img src="/assets/PNGs/Image 2.png" alt="Product"
+                                        class="tab-pane fade in active img-fluid product-img">
+                                </div>
+                            </a>
+                            <div class="product-short-details">
+                                <div class="product-rating">
+                                    <div class="Stars" style="--rating: 5;"
+                                        aria-label="Rating of this product is 5 out of 5">
+                                    </div>
+                                    <h5 class="product-name">Coffee French Press P7</h5>
+                                    <div class="product-price">
+                                        <p class="sale-price">$123.00 <span class="mrp">$149.00</span></p>
+                                    </div>
+                                    <ul class="varient-wrap nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#" class="varient-btn grey"></a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn black"></a></li>
+                                        <li><a data-toggle="tab" href="#" class="varient-btn grey"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Real Life Section -->
+    <section class="section-padding real-life-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="section-subtitle text-uppercase">designed for real life</p>
+                    <h2 class="section-title text-uppercase">Coffee made for <br>your life on the go.</h2>
+                    <p class="section-content">We understand coffee is a big part of your busy, active life. That’s
+                        why we create and develop products that allow you to bring your passion for <b>coffee-when
+                            you want it</b>- and wherever life takes you.</p>
+                </div>
+            </div>
+            <div class="row parallax-img-row">
+                <div class="col-12 col-lg-6">
+                    <div data-aos="fade-up" class="img-wrap-1 img-box text-start">
+                        <img src="/assets/PNGs/Screen Shot 2021-07-30 at 3.12.17 PM.png" alt="Real Life">
+                    </div>
+                    <div data-aos="fade-up" class="img-wrap-2 img-box text-end">
+                        <img src="/assets/PNGs/Mask Group 23.png" alt="" class="img-fluid">
+                    </div>
+                    <div data-aos="fade-up" class="img-wrap-3 img-box text-start">
+                        <img src="/assets/PNGs/7018-BS-GR_8.png" alt="Real Life">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div data-aos="fade-up" class="img-wrap-4 img-box text-end">
+                        <img src="/assets/PNGs/img-4.png" alt="" class="img-fluid">
+                    </div>
+                    <div data-aos="fade-up" class="img-wrap-5 img-box text-center">
+                        <img src="/assets/PNGs/Mask Group 20.png" alt="Real Life">
+                    </div>
+                    <div data-aos="fade-up" class="img-wrap-6 img-box text-center">
+                        <img src="/assets/PNGs/Screen Shot 2021-07-30 at 3.10.15 PM.png" alt="Real Life">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- “THE ULTIMATE BREW GUIDES” section -->
+    <section class="section-padding brew-guide">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 my-auto">
+                    <p class="section-subtitle text-uppercase">the ultimate brew guides</p>
+                    <h3 class="section-title text-uppercase">Coffee To Water Ratios: How To Measure Coffee Like A Pro
+                    </h3>
+                    <p class="section-content"><b>You can taste it when you’ve brewed with the perfect coffee to water
+                            ratio.</b> The acidity pops every so slightly, enhancing the rich flavors and aromas. Your
+                        coffee’s mouthfeel is smooth and satisfying. And the flavor is just strong enough that you can
+                        sense all its nuances across your 10,000 taste buds, but not so strong that it’s uncomfortable.
+                    </p>
+                    <p class="section-content">It’s an incredible experience—and too often, a hard one to come by.</p>
+                    <a href="#" class="learn-more-btn text-uppercase ">Learn More</a>
+                </div>
+                <div class="col-12 col-lg-6 ps-3 ps-lg-5 p-5">
+                    <div data-aos="fade-up" class="artefact-img-wrap">
+                        <img src="/assets/PNGs/Mask Group 24.png" alt="the ultimate brew guides" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="container">
+            <!-- newsletter row  -->
+            <div class="row section-padding">
+                <div class="col-md-4">
+                    <h5 class="footer-title text-uppercase">Never Miss A Drop.</h5>
+                    <p class="footer-subtitle mb-2 mb-md-0">Sign up to be the first to know about exclusive new deals,
+                        product
+                        launches and more.</p>
+                </div>
+                <div class="col-md-7 offset-md-1 my-auto">
+                    <div class="newsletter-wrap mt-4 mt-md-0">
+                        <form action="">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            <input type="button" value="SIGN UP">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- dotted line  -->
+            <hr class="dashed-seperator my-0">
+            <!-- footer links  -->
+            <div class="row section-padding">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="/assets/PNGs/footer-logo-fluid.png" alt="Fluid" class="img-fluid footer-logo mb-5">
+                    <p class="col-heading mb-0">We're here to help.</p>
+                    <a href="mailto:service@fluid.com" target="_blank">service@fluid.com</a>
+                    <a href="tel:+1.844.377.7622" target="_blank">1.844.377.7622</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h6 class="col-heading text-uppercase">Learn</h6>
+                    <ul class="footer-nav ps-0">
+                        <li class="footer-link">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Brew Guides</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Retailers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h6 class="col-heading text-uppercase">Support</h6>
+                    <ul class="footer-nav ps-0">
+                        <li class="footer-link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Shipping & Returns</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Our Guarantee</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h6 class="col-heading text-uppercase">Company</h6>
+                    <ul class="footer-nav ps-0">
+                        <li class="footer-link">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Join Us</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Press</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h6 class="col-heading text-uppercase">Connect with Us</h6>
+                    <div class="social-icon-wrap">
+                        <div class="social-icon">
+                            <a href="http://#" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="http://#" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="http://#" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright bottom bar  -->
+            <div class="d-flex align-items-center justify-content-between bottom-bar">
+                <p class="mb-0">Copyright © 2021 fluid Inc.</p>
+                <div class="bottom-bar-links-wrap">
+                    <a href="#" class="mb-0 me-3">Terms & Privacy</a>
+                    <a href="#" class="mb-0">Patents</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ajax/jquery cdn  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- slick slider script and jquery link  -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+    <!-- Bootstrap js CDN link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS cdn  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom script file  -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
